@@ -1,0 +1,13 @@
+# OS / editor
+.DS_Store
+*.swp
+*~
+
+# Python (на случай скриптов)
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Local
+*.local

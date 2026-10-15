@@ -4,8 +4,8 @@
 
     HANDOFF PROTOCOL: v0.2
     PROJECT: field-simcord
-    REPOSITORY: ~/field-simcord (локальный; GitHub-зеркало не подключено)
-    CURRENT HEAD: [НЕИЗВЕСТНО] — git не инициализирован
+    REPOSITORY: https://github.com/shaenxxx-commits/field-simcord (public)
+    CURRENT HEAD: bbca1e7 (проверено в текущей сессии)
     ACTIVE EXPERIMENT: Stage 0 — развёртывание поля
     STATUS: Active
     LAST OPERATOR DECISION: D-000000-00 (initial setup, accepted)

@@ -3,7 +3,7 @@
 
 **Дата последнего изменения:** 2026-10-15
 **Дата последней проверки:** 2026-10-15
-**Проверено по:** date (2026-10-15 17:48 EEST)
+**Проверено по:** date (2026-10-15 17:48 EEST); git log (74d0248)
 **Статус проекта:** Active
 
 ## Текущая цель
@@ -12,20 +12,16 @@ Stage 0 — развернуть поле. Создать структуру п�
 
 ## Завершено
 
-- [x] Прочитан каркас KARCAS-DDA (00_ENTRY, INVARIANTS, CURRENT_STATE, DECISIONS, KNOWLEDGE_STATES, METHOD, agent-rules, handoff-protocol, README, records/README)
+- [x] Прочитан каркас KARCAS-DDA
 - [x] Создана структура ~/field-simcord/ (docs/, meta/, records/, ARCHIVE/)
 - [x] Скопированы дословно из каркаса: INVARIANTS.md, docs/KNOWLEDGE_STATES.md, meta/agent-rules.md, meta/handoff-protocol.md, records/README.md
-- [x] Заполнен README.md
+- [x] Заполнены: README.md, CURRENT_STATE.md, DECISIONS.md (D-000000-00), docs/VISION.md, docs/METHOD.md (§1, §13), 00_ENTRY.md, PROVENANCE.md (P-20261015-01)
+- [x] Созданы заготовки: meta/handoff-current.md, meta/transitions.md, meta/open-questions.md (OQ-001..003), ARCHIVE/README.md
+- [x] git init, ветка main, .gitignore, первый коммит 74d0248
 
 ## В работе
 
-- [ ] Заполнить CURRENT_STATE.md (этот шаг)
-- [ ] Запись D-000000-00 в DECISIONS.md
-- [ ] Заполнить docs/VISION.md
-- [ ] Заполнить docs/METHOD.md (§1, §13)
-- [ ] Создать 00_ENTRY.md
-- [ ] Создать заготовки: meta/handoff-current.md, meta/transitions.md, meta/open-questions.md, PROVENANCE.md, ARCHIVE/README.md
-- [ ] git init, первый коммит
+- [ ] Определить первый полевой цикл (FIELD), согласовать с Архитектором до ACT.
 
 ## Заблокировано
 
@@ -33,11 +29,13 @@ Stage 0 — развернуть поле. Создать структуру п�
 
 ## Следующее действие
 
-D-000000-00 (initial setup) в DECISIONS.md.
+Согласовать с Архитектором конкретный первый полевой цикл: с чего начинаем сбор публичных следов Simcord (какой источник, какие поля). До этого — никаких сборов.
 
 ## Известные проблемы
 
-Нет.
+- GitHub-зеркало не подключено (OQ-002).
+- Внешние наблюдатели не привлечены (OQ-003).
+- Правовой режим сбора публичных данных не проверен (OQ-001).
 
 ## Известные неизвестные (UNKNOWN)
 
@@ -47,4 +45,4 @@ D-000000-00 (initial setup) в DECISIONS.md.
 
 ## Соответствие документации реальности
 
-Stage 0 — структура разворачивается. На момент записи: ядро заполнено частично (README, CURRENT_STATE), INVARIANTS — копия каркаса. DECISIONS, VISION, METHOD, 00_ENTRY — в работе.
+Stage 0 завершён. Минимальное ядро заполнено. Библиотека активна. git инициализирован, HEAD = 74d0248. GitHub-зеркало — по команде.

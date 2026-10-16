@@ -1,34 +1,42 @@
 # meta/handoff-current.md
 Текущий снимок передачи контекста.
-Формат — см. meta/handoff-protocol.md §7.
 
     HANDOFF PROTOCOL: v0.2
     PROJECT: field-simcord
     REPOSITORY: https://github.com/shaenxxx-commits/field-simcord (public)
-    CURRENT HEAD: ba6e0b7 (проверено в текущей сессии)
-    ACTIVE EXPERIMENT: Run 2 — технический контур (закрывается)
+    CURRENT HEAD: ada3906 (проверено в текущей сессии)
+    ACTIVE EXPERIMENT: Run 3 (news) закрыт
     STATUS: Active
     LAST OPERATOR DECISION: D-20261016-01 (шесть решений Run 0)
     MANDATORY FILES: README.md, INVARIANTS.md, CURRENT_STATE.md, DECISIONS.md, 00_ENTRY.md, docs/VISION.md, docs/METHOD.md
     UNVERIFIED: см. CURRENT_STATE.md, раздел «Известные неизвестные»
-    OPEN QUESTIONS: см. meta/open-questions.md (OQ-001, OQ-003, OQ-004)
-    LAST RESPONSE NUMBER: 237
+    OPEN QUESTIONS: OQ-001, OQ-003, OQ-004
+    ARCHITECT SIGNALS: meta/architect-signals.md (2 записи)
+    LAST RESPONSE NUMBER: 305
 
-## Состояние Run 2 (технический контур)
+## Состояние проекта
 
-Завершено:
-- OBS-020 (WHOIS/RDAP по 3 доменам)
-- OBS-021 (DNS по 3 доменам; аномалия mailru-verification на bitbon.space)
-- OBS-022 (TLS/CT: 50 поддоменов simcord.com, 8 у bitbon.space)
-- OBS-023 (Wayback 2008–2011: «Simcord Inc» до регистрации ТОВ)
-- OBS-024 (OpenCorporates: 3 юрлица Simcord)
-- OBS-025 (GitHub: bitbon-system-blockchain — форк go-ethereum, permissioned)
-- ACT-005 (латвийское SIA Simcord Information Services, недействующее с 11.03.2025)
+Run 0, 1, 2, 3 закрыты.
 
-Не начато:
-- news (200+ публикаций)
-- суды (24 дела)
+Run 0: внешние наблюдатели (Luna/Kimi/Grok), LEAD SYNTHESIS, D-20261016-01.
+Run 1: OBS-000..014 + ACT-001..004 + ASSESS + CORRECTIONS. 10 SUPPORTED.
+Run 2: технический контур (OBS-020..025) + ACT-005 + SYNTHESIS. +1 SUPPORTED.
+Run 3: news выборочно (OBS-026..036) + SYNTHESIS. 11 OBS, 4 темы.
 
-Запланировано на Run 3: news + суды; закрытие UNKNOWN по ИС.
+Всего: OBS-000..036. transitions: 11 записей. Git: всё запушено.
 
-Последний коммит: ba6e0b7
+## Ключевые объекты
+
+- E1 (LEGAL_ENTITY): ТОВ «СІМКОРД», код 37657823.
+- E2 (BRAND): Simcord.
+- E3 (PRODUCT): Bitbon (permissioned, форк go-ethereum).
+- E4 (RELATED): Integrated ECN, Integration ICN KZ, Integration ICN UA, НДЦ блокчейн-рішень, Агробон, Commercebon, iPro, iPA, LMS, SSO, One Space, Meta Studio DE, Bitbon Space (закрыт), Gelan Trawler (закрыт), FxMarketWave, латвийское SIA (закрыто), IT-кластер Закарпаття, LUCC, Arnaud Lumet.
+
+## Не закрыто (Run 4)
+
+- Суды: 24 дела (YouControl).
+- Проверка Integration ICN KZ в реестре РК.
+- Проверка лицензии KZ31VWS00000002 в elicense.kz.
+- Опционально: остальные ~89 news.
+
+Последний коммит: ada3906

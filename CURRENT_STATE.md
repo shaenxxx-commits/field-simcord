@@ -22,6 +22,7 @@ Run 4 закрыт. Ожидание решения Архитектора о Ru
 - [x] transitions.md: 12 записей UNKNOWN → SUPPORTED
 - [x] meta/architect-signals.md: журнал сигналов (3 записи)
 - [x] docs/METHOD.md §8: классы источников A/B
+- [x] records/figurants.md: доска фигурантов (164 фигуранта, 97 связей, 11 кластеров, 20 вопросов)
 
 ## В работе
 

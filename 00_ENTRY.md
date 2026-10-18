@@ -38,6 +38,7 @@ field-simcord — полевое исследование компании Simco
 - meta/transitions.md
 - meta/open-questions.md
 - PROVENANCE.md
+- records/figurants.md
 - records/
 - ARCHIVE/
 

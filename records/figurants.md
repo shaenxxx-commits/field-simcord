@@ -1,0 +1,218 @@
+# records/figurants.md
+Доска фигурантов исследования field-simcord.
+Режим: append-only. Все имена и названия, обнаруженные в поле, регистрируются здесь.
+Старые записи не переписываются — новые добавляются.
+
+Формат записи:
+    <ID> | <имя / название> | <категория> | <юрисдикция> | <роль> | <источники (OBS/ACT/SIG ID)> | <статус>
+
+Категории:
+    L — лицо
+    O — организация (юрлицо)
+    G — государственный орган
+    I — институт / некоммерческая структура
+    E — мероприятие / событие
+    D — документ
+    P — продукт / проект
+    R — реестр / база данных
+    U — неидентифицированное
+
+Статусы:
+    verified  — подтверждено реестром или официальным документом
+    supported — официальная публикация, не реестр
+    mentioned — упоминание в источнике, без подтверждения
+    unknown   — имя есть, сущность не идентифицирована
+    rejected  — упоминалось, но связь с полем не установлена
+
+---
+
+## A. Фигуранты
+
+### A.1. Лица (L)
+
+L-001 | Кудь Александр Александрович | L | UA | владелец 100%, руководитель, изобретатель | OBS-002.1, OBS-015.2, OBS-015.3, OBS-025, OBS-026.4 | verified (ЕГРПОУ + Google Patents)
+L-002 | Кудь Александр Александрович (автор научных публикаций) | L | UA | исследователь по теме цифровых активов, аспирант Харьковского регионального института гос. управления | Google Scholar (MS 152, OQ-004) | mentioned (тождество с L-001 не установлено)
+L-003 | Мащенко М. А. | L | UA | соавтор публикации Кудь | OQ-004 | mentioned
+L-004 | Пипенко І. С. | L | UA | соавтор публикации Кудь | OQ-004 | mentioned
+L-005 | Соболева І. В. | L | UA | соавтор публикации Кудь | OQ-004 | mentioned
+L-006 | Амина Жаманова | L | KZ | основатель/директор Integration ICN KZ | поиск (не OBS) | mentioned (требует проверки)
+L-007 | Гиззат Байтурсынов (БАЙТУРСЫНОВ ҒИЗЗАТ СЕЙДАХМЕТҰЛЫ, IIN 940121300122) | L | KZ | глава Комитета цифровых активов, подписант лицензии | OBS-038.5 | verified (elicense.kz)
+L-008 | Arnaud Lumet (Арно Люме) | L | LU / UA | член правления LUCC, организатор украинского павильона ICT Spring | OBS-031.5 | mentioned
+L-009 | Рыщенко Михаил Иванович | L | UA | изобретатель патента ХПИ (UA30256U) | OBS-009 / ACT-004 | mentioned (связь с Simcord не установлена)
+L-010 | Щукина Людмила Павловна | L | UA | изобретатель патента ХПИ (UA30256U) | OBS-009 / ACT-004 | mentioned (связь с Simcord не установлена)
+L-011 | Федоренко Елена Юрьевна | L | UA | изобретатель патента ХПИ (UA30256U) | OBS-009 / ACT-004 | mentioned (связь с Simcord не установлена)
+L-012 | Александр Кудь / Alexsandr Kud / Aleksandr KUD | L | — | вариант транслитерации имени | OBS-025 (GitHub) | verified (то же лицо, что L-001)
+
+### A.2. Организации (O)
+
+O-001 | ТОВ «СІМКОРД» (ТОВАРИСТВО З ОБМЕЖЕНОЮ ВІДПОВІДАЛЬНІСТЮ «СІМКОРД») | O | UA | основное юрлицо, код 37657823 | OBS-006, OBS-015, ACT-002 | verified (ЕГРПОУ)
+O-002 | Simcord LLC (LIMITED LIABILITY COMPANY SIMCORD) | O | UA | англоязычная форма юрлица | OBS-015.1, OBS-025 | verified (ЕГРПОУ)
+O-003 | Представительство «Закарпаття» ТОВ «СІМКОРД» | O | UA | ВП, код 44819099, Мукачево | OBS-015.8 | verified (ЕГРПОУ)
+O-004 | SIA «SIMCORD INFORMATION SERVICES» | O | LV | латвийское юрлицо, код 40103781754, регистрация 22.04.2014, исключено 11.03.2025 | OBS-024, ACT-005 | verified (firmas.lv)
+O-005 | SIMCORD ADVANCED MARKETING SOLUTIONS LLP | O | GB | британское LLP, код OC389221 | OBS-024 | rejected (связь не установлена)
+O-006 | ACN 003 059 407 LIMITED | O | AU | австралийское юрлицо, 1987 | OBS-024 | rejected (связь не установлена)
+O-007 | «Simcord Inc» | O | ? | неизвестное юрлицо, упомянуто на домене simcord.com в 2010 | OBS-023 | unknown
+O-008 | Integrated ECN | O | ? | «головний дистриб'ютор» группы Simcord, запущен 13.03.2017 | OBS-030 | supported
+O-009 | Integration ICN KZ (ТОО «Интеграция в информационно-коммуникационную сеть — Казахстан») | O | KZ | первый региональный оператор Bitbon, лицензиат KZ31VWS00000002 | OBS-026, OBS-028, OBS-038 | verified (elicense.kz)
+O-010 | Integration ICN UA (ТОВ «Інтеграція в інформаційно-комунікаційну мережу — Україна») | O | UA | региональный оператор Bitbon в Украине, запущен 28.08.2026 | OBS-027 | supported
+O-011 | НДЦ блокчейн-рішень (Науково-дослідний центр економіко-правових рішень у сфері застосування технологій розподіленого реєстру) | O | UA | научно-исследовательский центр, технический партнёр Simcord | OBS-032 | supported
+O-012 | Харьковский политехнический институт (ХПИ / Національний технічний університет «Харківський політехнічний інститут») | O | UA | assignee патента UA30256U (керамика), не связано с Simcord | ACT-004 | rejected (связь не установлена)
+O-013 | Харьковский национальный университет им. В. Н. Каразина (ХНУ) | O | UA | издатель журнала periodicals.karazin.ua, где публиковался Кудь А. А. | Google Scholar (OQ-004) | mentioned
+O-014 | Харьковский региональный институт государственного управления НАГУ при Президенте Украины | O | UA | аспирантура Кудь А. А. | поиск (не OBS) | mentioned
+O-015 | Bureau Veritas Certification Holding SAS — UK Branch | O | GB | орган сертификации ISO 9001:2015 | OBS-005, OBS-006 | supported
+O-016 | Bureau Veritas (головная организация) | O | FR | международная организация сертификации | OBS-006 | mentioned
+O-017 | UKAS (United Kingdom Accreditation Service) | O | GB | аккредитация Bureau Veritas | OBS-005.3, ACT-001 | mentioned
+O-018 | Simcord Site S3 Bucket (s3.eu-central-1.amazonaws.com/simcord-site) | O | DE (AWS EU) | хранилище изображений и PDF сайта Simcord | OBS-006, OBS-007 | verified (технический артефакт)
+O-019 | Cloudflare | O | US | DNS/CDN провайдер для simcord.com и bitbon.space | OBS-020, OBS-021, OBS-022 | verified (RDAP, CT)
+O-020 | Namecheap | O | US | регистратор и DNS для bitbon.com (парковка) | OBS-020, OBS-021 | verified (RDAP)
+O-021 | ukraine.com.ua | O | UA | почтовый провайдер bitbon.space (SPF) | OBS-021 | verified (DNS)
+O-022 | selzy.com | O | UA | email-маркетинг провайдер bitbon.space (SPF) | OBS-021 | verified (DNS)
+O-023 | mx.services | O | ? | внешний MX-провайдер bitbon.space | OBS-021 | unknown
+O-024 | Google (Google Analytics, Google Tag Manager, Google Search, Google Patents) | O | US | инструменты аналитики и публичная база патентов | OBS-023, ACT-004 | verified
+O-025 | Facebook / Meta | O | US | Facebook domain verification на simcord.com и bitbon.space | OBS-021 | verified (DNS)
+O-026 | Mail.ru | O | RU | mailru-verification на bitbon.space | OBS-021 | verified (DNS), связь не установлена
+O-027 | GitHub (организация simcord-llc) | O | US | хостинг репозиториев bitbon-system-blockchain, erbb-erc20 | OBS-025 | verified
+O-028 | YouControl | O | UA | агрегатор ЕГРПОУ | ACT-002 | verified (источник)
+O-029 | OpenCorporates | O | GB | агрегатор юрлиц | OBS-024 | verified (источник)
+O-030 | firmas.lv | O | LV | агрегатор латвийских юрлиц | ACT-005 | verified (источник)
+O-031 | certik.com | O | US | платформа аудита смарт-контрактов | OBS-037 | verified (источник)
+O-032 | DOU (dou.ua) | O | UA | украинское IT-издание, simcord-investigation | OBS-037 | mentioned
+O-033 | ForkLog | O | UA | крипто-издание, упоминание MLM-механики | OBS-037 | mentioned
+O-034 | olegwebmaster.blogspot.com | O | UA | блог IT-специалиста (2020) | OBS-037 | mentioned
+O-035 | blockchainukraine.org | O | UA | научно-правовое заключение о токене Bitbon | OBS-037 | mentioned
+
+### A.3. Государственные органы (G)
+
+G-001 | Комитет цифровых активов и прорывных технологий Министерства искусственного интеллекта и цифрового развития РК | G | KZ | выдал лицензию KZ31VWS00000002, выдал Предписание № 1 (24.12.2025) и Уведомление № KZ74TWS00000007 (05.01.2026) | OBS-038, OBS-039, OBS-041 | verified (elicense.kz)
+G-002 | Министерство цифрового развития, инноваций и аэрокосмической промышленности РК | G | KZ | уполномоченный орган, выдавший лицензию | OBS-028, OBS-038 | verified (elicense.kz)
+G-003 | Министерство искусственного интеллекта и цифрового развития РК | G | KZ | новое название министерства (2026) | OBS-039.5 | supported
+G-004 | Специализированный межрайонный административный суд города Астаны | G | KZ | суд первой инстанции (дело 12.03.2026) | OBS-039.3 | supported
+G-005 | Суд города Астаны (судебная коллегия по административным делам) | G | KZ | апелляция (дело № 7199-26-00-4а/823, 24.06.2026) | OBS-039.4 | supported
+G-006 | Администрация Президента Республики Казахстан | G | KZ | получила жалобу ICN KZ № 1-07/26 от 03.07.2026 | OBS-039.6 | supported
+G-007 | Республиканское государственное учреждение «Комитет искусственного интеллекта и развития инноваций» | G | KZ | организация подписанта лицензии (BIN 240540018504) | OBS-038.5 | verified (elicense.kz)
+G-008 | Государственный департамент США (US Department of State) | G | US | через инициативу GIST поддержал GIST Pitch Days (март 2023) | OBS-032.2 | supported
+G-009 | Закарпатская областная государственная администрация (Закарпатська ОДА) | G | UA | поддержка IT-кластера Закарпатье | OBS-031.3 | supported
+G-010 | Посольство Украины в Королевстве Бельгия | G | BE | публикация об ICT Spring 2023 | OBS-032.7 | supported
+G-011 | Фонд государственного имущества Украины (ФДМУ) | G | UA | реестр, где зафиксировано 0% государственной доли в ТОВ «СІМКОРД» | OBS-015 | verified (YouControl)
+
+### A.4. Институты / некоммерческие структуры (I)
+
+I-001 | IT-кластер Закарпатье | I | UA | участник — Simcord, поддержка ОГА | OBS-031.3, OBS-032 | supported
+I-002 | Люксембурзько-українська торгова палата (LUCC) | I | LU / UA | двусторонняя палата, Arnaud Lumet — член правления | OBS-031.5 | supported
+I-003 | GIST (Global Innovation through Science and Technology Initiative) | I | US | инициатива при Госдепе США, GIST Pitch Days | OBS-032.2 | supported
+I-004 | ICT Spring (конференция) | I | LU | Tech-конференция в Люксембурге | OBS-031.1, OBS-032 | supported
+I-005 | Science&Business — GIST Pitch Days (конкурс) | I | UA / US | конкурс стартапов, март 2023 | OBS-032.2 | supported
+I-006 | Академия платформной экономики | I | ? | образовательная платформа (упомянута в Roadmap ICN KZ) | OBS-028.6 | mentioned
+I-007 | Международный медиационный центр | I | KZ | организация, где, по данным поиска, состоит Амина Жаманова | поиск (не OBS) | mentioned
+I-008 | Академия информационной экономики (Academy of Information Economics) | I | ? | образовательная платформа Simcord | OBS-002.5 (news sitemap) | mentioned
+I-009 | Национальная академия правовых наук Украины | I | UA | сотрудничество с Simcord | OBS-002.5 (news sitemap) | mentioned
+I-010 | Харьковский международный юридический форум (3-й) | I | UA | Simcord участвовала | OBS-002.5 (news sitemap) | mentioned
+I-011 | Digital Business Hub | I | ? | образовательная программа ICN KZ | OBS-040.7 | mentioned
+I-012 | UBK Markets | I | ? | проект/компания, «5 лет с UBK Markets» | OBS-002.5 (news sitemap), OBS-022 | mentioned
+I-013 | WIPO (World Intellectual Property Organization) | I | CH | международная регистрация ТМ и патентов | OBS-009, OBS-010 | verified
+I-014 | PATENTSCOPE (WIPO) | I | CH | публичная база PCT-заявок | OBS-009 | verified (источник)
+I-015 | Madrid Monitor (WIPO) | I | CH | публичная база Мадридских ТМ | OBS-010, ACT-003 | verified (источник)
+
+### A.5. Документы (D)
+
+D-001 | Сертификат ISO 9001:2015 № UA231316 | D | GB (Bureau Veritas) | выдан ТОВ «СІМКОРД» 27.03.2024, действует до 05.04.2027 | OBS-006 | supported (PDF Simcord), не верифицирован в реестре
+D-002 | Положение о матричной структуре управления компании СИМКОРД (PDF, 34 стр.) | D | UA | внутренний документ, опубликован на сайте | OBS-004 | supported
+D-003 | Лицензия KZ31VWS00000002 (Разрешение на выпуск и обращение обеспеченных цифровых активов) | D | KZ | выдана 29.10.2025, прекращена 01.05.2026 | OBS-028, OBS-038 | verified (elicense.kz)
+D-004 | Предписание № 1 Комитета цифровых активов | D | KZ | 24.12.2025, о прекращении деятельности | OBS-039.1, OBS-041 | supported (заявление оператора)
+D-005 | Уведомление № KZ74TWS00000007 | D | KZ | 05.01.2026, о прекращении действия лицензии | OBS-039.1 | supported (заявление оператора)
+D-006 | Решение Специализированного межрайонного административного суда г. Астаны | D | KZ | 12.03.2026, иск ICN KZ удовлетворён | OBS-039.3 | supported (заявление оператора)
+D-007 | Постановление судебной коллегии по административным делам суда г. Астаны (дело № 7199-26-00-4а/823) | D | KZ | 24.06.2026, апелляция отклонена | OBS-039.4 | supported (заявление оператора)
+D-008 | Частное определение в адрес Министра искусственного интеллекта и цифрового развития РК | D | KZ | вынесено судом первой инстанции | OBS-039.5 | supported
+D-009 | Жалоба ICN KZ в Администрацию Президента РК № 1-07/26 | D | KZ | 03.07.2026 | OBS-039.6 | supported
+D-010 | Патент UA138628U (Method of transaction of cash transfer for purpose use) | D | UA | assignee ТОВ «Сімкорд», inventor Кудь | ACT-004 | verified (Google Patents)
+D-011 | Патент UA137352U (Method of transaction for digital asset transfer) | D | UA | assignee ТОВ «Сімкорд», inventor Кудь | ACT-004 | verified (Google Patents)
+D-012 | Патент UA139012U (Digital asset transfer system) | D | UA | assignee ТОВ «Сімкорд», inventor Кудь | ACT-004 | verified (Google Patents)
+D-013 | Патент US20190050851A1 (PCT/UA2017/000050) | D | US | assignee Simcord, inventor Alexsandr Kud | ACT-004 | verified (Google Patents)
+D-014 | Патент WO2020219004A1 (PCT/UA2017/000068) | D | WO | assignee Simcord, inventor Aleksandr Kud | ACT-004 | verified (Google Patents)
+D-015 | Патент UA30256U (Ceramic mass for preparation of brick building products) | D | UA | assignee ХПИ, inventors Рыщенко/Щукина/Федоренко; НЕ патент Simcord на GUI iPro | ACT-004 | verified (Google Patents), расхождение с заявлением Simcord
+D-016 | Патент KZ30184 (Система организации электронной торговли) | D | KZ | заявлен Simcord, в Google Patents не найден | OBS-009 | unknown
+D-017 | Патент KZ4296 (Способ осуществления транзакции по передаче цифровой ценности) | D | KZ | заявлен Simcord, в Google Patents не найден | OBS-009 | unknown
+D-018 | Торговая марка Simcord™ (текст) | D | мн. | регистрации в 24 странах, 2012–2022 | OBS-010 | mentioned (номера не проверены)
+D-019 | Торговая марка Simcord (логотип) | D | мн. | регистрации в 14 странах, 2012–2015 | OBS-010 | mentioned
+D-020 | Торговая марка Bitbon™ | D | мн. | регистрации в 22+ странах | OBS-010 | mentioned
+D-021 | Торговая марка «Цифровой актив™» | D | UA, мн. | регистрация термина как ТМ | OBS-010 | mentioned
+D-022 | Торговая марка «Контрибьютинг™» | D | UA | регистрация термина как ТМ | OBS-010 | mentioned
+D-023 | Торговая марка «Контрибьютор™» | D | UA | регистрация термина как ТМ | OBS-010 | mentioned
+D-024 | Торговая марка «Контрактат™» | D | UA | регистрация термина как ТМ | OBS-010 | mentioned
+D-025 | Торговая марка «Метаактив™» | D | UA | регистрация 2025 | OBS-010 | mentioned
+D-026 | Торговая марка «Метаресурс™» | D | UA | регистрация 2025 | OBS-010 | mentioned
+D-027 | Торговая марка «Сплай™» | D | UA | регистрация 2025 | OBS-010 | mentioned
+D-028 | Торговая марка iPro Marketplace™ | D | мн. | 10 регистраций | OBS-010 | mentioned
+D-029 | Торговая марка One Space™ | D | мн. | 5 регистраций | OBS-010 | mentioned
+
+### A.6. Продукты / проекты (P)
+
+P-001 | Bitbon (Система Bitbon) | P | — | permissioned blockchain на базе go-ethereum (Quorum) | OBS-025, OBS-007, OBS-013 | verified (GitHub, README)
+P-002 | bitbon-system-blockchain | P | — | GitHub-репозиторий Go-ноды, 2019–2022 | OBS-025 | verified (GitHub)
+P-003 | erbb-erc20 | P | — | GitHub-репозиторий ERC-20 контракта (Solidity), 2023 | OBS-025, OBS-037 | verified (GitHub)
+P-004 | ERBB (Exchange Request for Bitbon) | P | — | ERC-20 токен | OBS-037 | mentioned (CertiK)
+P-005 | Bitbon Space (мобильное приложение) | P | — | запущено 16.05.2018, остановлено 10.03.2020 | OBS-033, OBS-034 | supported
+P-006 | One Space | P | — | мобильное приложение, базовый сервис Bitbon | OBS-007.3, OBS-034 | supported
+P-007 | Meta Studio DE | P | — | сервис регистрации и учёта цифровых объектов | OBS-007.4 | supported
+P-008 | eDAC (E-commerce Deal Accounting Complex) | P | — | токенизация денег | OBS-007.5 | supported
+P-009 | AMS (Account Management System) | P | — | AML-верификация клиентов | OBS-007.6 | supported
+P-010 | iPro Marketplace | P | — | трейдинг-платформа | OBS-007.7 | supported
+P-011 | LMS (Liquidity Management System) | P | — | управление ликвидностью | OBS-007.8 | supported
+P-012 | iPA (Intelligent Processing Algorithms) | P | — | алгоритмы торговли | OBS-007.9 | supported
+P-013 | SSO (Support System Operator Workplace) | P | — | поддержка клиентов | OBS-007.10 | supported
+P-014 | Gelan Trawler | P | — | торговая система, коммерческий старт Simcord 09.09.2009, остановлена 22.05.2020 | OBS-036 | supported
+P-015 | FxMarketWave | P | — | платформа волнового анализа, ТМ 2014 | OBS-036, OBS-010 | mentioned
+P-016 | Агробон | P | UA | проект НДЦ, победитель GIST Pitch Days (март 2023), ICT Spring 2023 | OBS-031, OBS-032 | supported
+P-017 | Commercebon | P | — | escrow-решение для e-commerce, часть Агробон | OBS-031.6 | mentioned
+P-018 | Assetbox™ | P | — | компонент Системы Bitbon (хранение и перевод единиц) | OBS-010, OBS-022 | mentioned
+P-019 | Safebox™ | P | — | компонент инфраструктуры Bitbon | OBS-010 | mentioned
+P-020 | Masterbox™ | P | — | компонент инфраструктуры Bitbon | OBS-010 | mentioned
+P-021 | Bonpay™ | P | — | сервис перевода цифровых активов | OBS-010 | mentioned
+P-022 | Bitup™ / Bitup-Агентство™ | P | — | агентство юридического сопровождения проектов | OBS-010 | mentioned
+P-023 | Obvents™ | P | — | сервис коммерческой выгоды | OBS-010 | mentioned
+P-024 | Marketwork™ | P | — | проект социального направления | OBS-010 | mentioned
+P-025 | Detorting™ | P | — | алгоритм сжатия данных | OBS-010 | mentioned
+P-026 | New Level™ | P | — | партнёрская программа | OBS-010 | mentioned
+P-027 | «Контрибьютинг» (как вид деятельности в Bitbon) | P | — | термин, зарегистрирован как ТМ | OBS-010 | mentioned
+P-028 | «Контрактат» (роль пользователя) | P | — | термин, зарегистрирован как ТМ | OBS-010 | mentioned
+P-029 | «Метаактив» (инструмент) | P | — | термин, зарегистрирован как ТМ | OBS-010 | mentioned
+P-030 | «Метаресурс» (сервис для бизнеса) | P | — | термин, зарегистрирован как ТМ | OBS-010 | mentioned
+P-031 | «Сплай» (инструмент управления репутацией) | P | — | термин, зарегистрирован как ТМ | OBS-010 | mentioned
+P-032 | Digital Business Hub (программа) | P | — | образовательная программа ICN KZ | OBS-040.7 | mentioned
+P-033 | Курс «Web 4.0: архитектура цифровых экосистем» | P | KZ | открыта регистрация 21.05.2026 | OBS-039 (список) | mentioned
+P-034 | «Ескроу Маркетплейс» | P | KZ | сервис, анонсированный в Roadmap ICN KZ | OBS-028.6 | mentioned
+P-035 | Решение о выпуске обеспеченных цифровых активов | P | KZ | документ, требовавшийся Комитетом | OBS-041.2 | mentioned
+
+### A.7. Реестры / базы (R)
+
+R-001 | ЕГРПОУ (Єдиний державний реєстр юридичних осіб, фізичних осіб-підприємців та громадських формувань) | R | UA | государственный реестр юрлиц | ACT-002 | verified (источник)
+R-002 | YouControl | R | UA | агрегатор ЕГРПОУ (см. O-028) | ACT-002 | verified (источник)
+R-003 | elicense.kz (Электронное лицензирование РК) | R | KZ | официальный реестр разрешительных документов | OBS-038 | verified (источник)
+R-004 | Google Patents | R | US | публичная база патентов | ACT-004 | verified (источник)
+R-005 | Wayback Machine (Internet Archive) | R | US | архив веб-страниц | OBS-023, OBS-001..014 | verified (источник)
+R-006 | OpenCorporates | R | GB | агрегатор юрлиц (см. O-029) | OBS-024 | verified (источник)
+R-007 | firmas.lv | R | LV | агрегатор латвийских юрлиц (см. O-030) | ACT-005 | verified (источник)
+R-008 | crt.sh (Certificate Transparency) | R | US | публичный лог TLS-сертификатов | OBS-022 | verified (источник)
+R-009 | RDAP (rdap.org) | R | US | публичный протокол WHOIS-заменитель | OBS-020 | verified (источник)
+R-010 | Google DNS API (dns.google) | R | US | публичный DNS-резолвер | OBS-021 | verified (источник)
+R-011 | Google Scholar | R | US | публичная база научных публикаций | OQ-004 | verified (источник)
+R-012 | GitHub API | R | US | публичный API GitHub | OBS-025 | verified (источник)
+R-013 | certik.com (Skynet) | R | US | платформа аудита смарт-контрактов (см. O-031) | OBS-037 | verified (источник)
+R-014 | reyestr.court.gov.ua (Єдиний державний реєстр судових рішень) | R | UA | публичный реестр судебных решений Украины | ACT-002 (24 дела), Run 5 | verified (источник), не проверялся
+R-015 | info.ur.gov.lv (Латвийский UR) | R | LV | официальный портал реестра Латвии | ACT-005 | verified (SPA, не дал данных)
+R-016 | Судова влада України (court.gov.ua) | R | UA | официальный портал судебной власти | Run 5 (план) | verified (источник), не проверялся
+
+### A.8. Неидентифицированное (U)
+
+U-001 | «Региональные операторы Системы Bitbon» (как класс) | U | мн. | институциональная роль, приглашение через сайт Simcord | OBS-011.2, OBS-013.3 | mentioned
+U-002 | «Оператори сегментів мережі» | U | KZ | нижний уровень операторов (июнь 2025) | OBS-026.7 | mentioned
+U-003 | «Корпоративні оператори» | U | UA | нижний уровень операторов (август 2026) | OBS-027.3 | mentioned
+U-004 | «Оператори соціальних сегментів мережі» | U | KZ | нижний уровень операторов (октябрь 2025) | OBS-028.7 | mentioned
+U-005 | «Независимый директор» (роль, вакансия) | U | UA | открытый рекрутинг Simcord | OBS-013.1 | mentioned
+U-006 | «Радник» (роль, вакансия) | U | UA | открытый рекрутинг Simcord | OBS-013.2 | mentioned
+U-007 | «Дилерская сеть» | U | KZ / UA | формируемая сеть операторов | OBS-026.5, OBS-027.4 | mentioned
+U-008 | «Академія платформної економіки» (как бета-тест) | U | KZ | анонсировано в Roadmap ICN KZ | OBS-028.6 | mentioned
+U-009 | «Региональные операторы в других странах» (приглашение) | U | мн. | «команда Сімкорд веде роботу із забезпечення реєстрації Регіональних операторів і в інших країнах» | OBS-027.5 | mentioned
+U-010 | «Партнерські угоди» на ICT Spring 2023 | U | LU | «десятки зустрічей», контрагенты не названы | OBS-032.5 | unknown
+U-011 | «Інвестиційні компанії» на ICT Spring 2023 | U | LU | «делегації інвестиційних компаній» без имён | OBS-032.5 | unknown
+
